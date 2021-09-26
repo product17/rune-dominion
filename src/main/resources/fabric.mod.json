@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "rune_dominion",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Rune Dominion",
+  "description": "Runes the allow you to power up",
   "authors": [
     "Me!"
   ],
@@ -14,23 +14,23 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/rune_dominion/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.sandbox.rune_dominion.RuneDominion"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
-  ],
-
+		"rune_dominion.mixins.json"
+	],
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "1.17.x",
-    "java": ">=16"
+    "java": ">=16",
+    "trinkets": "3.0.4"
   },
   "suggests": {
     "another-mod": "*"
